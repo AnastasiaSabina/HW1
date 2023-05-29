@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+}
+
+#logo{
+    font-family: 'Dancing Script', cursive, serif;
+    color: #9d6f38;
+    padding:15px;
+    font-size: 33px;
+}
+
+#n{
+   display: flex;
+   justify-content: space-between; 
+   align-items: center ;
+   background-color: rgba(242, 207, 235, 0.86); 
+   height: 50px;
+   z-index:1;
+   position:absolute ;
+   top:0;
+   width:100%;
+}
+
+
+#h{ 
+position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 500px;
+    width: 100%;
+    background-image: url(blogscrolling.gif);
+    background-size:auto;
+    background-position: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+
+ 
+#overlay{
+    background-color:rgba(0, 0, 0, .3);
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+
+
+#collegamenti a,#esci a{
+font-family: 'Playfair Display', serif;
+font-size: 16px;
+border: 3px outset rgb(169, 11, 135) ;
+color: #9d6f38;
+font-style:oblique;
+text-decoration: none; 
+margin:7px;
+padding: 5px;
+
+}
+
+
+
+#n div a:hover {
+    
+border: 4px double #ff03c4;
+background-color:#7d0375e8;
+color: rgb(199, 141, 170);
+
+}
+
+#n div a:active{
+text-decoration: underline wavy rgb(200, 160, 209); 
+}
+
+#menu{
+    display: none;
+}
+
+@media (max-width:634px){
+    #collegamenti {
+        display:none;
+    }
+    #menu{
+        display:block;}
+}
+
+#menu div{
+   width:25px;
+   height: 3px;
+   background-color: hwb(332 8% 23%);
+   margin:5px 10px;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+
+#s{
+    display:flex;
+    width:100vw;
+    justify-content:center; 
+    flex-direction: column;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+#results{
+
+    height:400px;
+
+}
+
+
+footer{
+    background-color: rgb(242, 207, 235);
+    color: rgb(190, 13, 131);
+    padding: 35px;
+    text-align: center;
+    width: auto;
+}
+
+

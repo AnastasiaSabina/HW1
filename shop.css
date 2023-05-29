@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+}
+
+#logo{
+    font-family: 'Dancing Script', cursive, serif;
+    color: #9d6f38;
+    padding:15px;
+    font-size: 33px;
+}
+
+#n{
+   display: flex;
+   justify-content: space-between; 
+   align-items: center ;
+   background-color: rgba(242, 207, 235, 0.923); 
+   height: 50px;
+   z-index:1;
+   position:absolute ;
+   top:0;
+   width:100%;
+}
+
+
+#collegamenti a,#separator a,#esci a{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    border: 3px outset rgb(169, 11, 135) ;
+    color: #9d6f38;
+    font-style:oblique;
+    text-decoration: none; 
+    margin:7px;
+    padding: 5px;
+    }
+    
+#n div a:hover {
+        border: 4px double #ff03c4;
+        background-color:#7d0375e8;
+        color: rgb(199, 141, 170);
+        
+        }
+
+
+#n div a:active{
+    text-decoration: underline wavy rgb(200, 160, 209); 
+    }
+    
+#h{
+    display:flex;
+    background-image: url(fotoshop.jpeg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position:relative; 
+    background-position: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#overlay{
+    background-color:rgba(0, 0, 0, .3);
+    position:absolute;
+    top:0;
+    bottom:0;
+    height:100%;
+    width:100%;
+}
+
+
+#titolo{
+    font-size:80px;
+    color: hwb(332 8% 23%);
+    max-width: 780px;
+    z-index:1;
+}
+
+
+#form{
+    display: flex; 
+    Justify-content: center; 
+    padding:10px;
+    color: #c3a013;
+
+}
+
+
+#generale{ 
+   font-size: 17px ;
+   font-family: 'Tiro Devanagari Hindi', serif;
+   color: #c3a013;
+   font-style: normal;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   text-align: center;
+
+   display:flex;
+   width:66.67vw;
+   justify-content:center; 
+   flex-direction: column;
+   margin-left:auto;
+   margin-right: auto;
+}
+
+
+
+
+
+#menu{
+    display: none;
+}
+
+@media (max-width:634px){
+    #collegamenti {
+        display:none;
+    }
+    #menu{
+        display:block;}
+}
+
+#menu div{
+   width:25px;
+   height: 3px;
+   background-color: hwb(332 8% 23%);
+   margin:5px 10px;
+}
+
+footer{
+    background-color: rgb(242, 207, 235);
+    color: rgb(190, 13, 131);
+    padding: 35px;
+    text-align: center;
+    width: auto;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+#results{
+ display: flex;
+justify-content: space-between;
+flex-direction: column;
+padding: 15px;
+margin-top: 40px;
+margin-bottom: 20px;
+}
+
+
+.info{
+    font-size: 15px;
+color:rgb(86, 3, 68);
+}
